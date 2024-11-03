@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RFQ System</title>
+    <script src="https://unpkg.com/htmx.org@1.7.0"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .messages {
+            list-style-type: none;
+            padding: 0;
+        }
+        .messages li {
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .messages li.success {
+            background-color: #e0ffe0;
+            color: #007700;
+        }
+        .messages li.error {
+            background-color: #ffe0e0;
+            color: #770000;
+        }
+    </style>
+</head>
+<body>
+    <h1>RFQ System - BuildNow Task</h1>
+
+    <!-- Navigation Bar -->
+    {% if user.is_authenticated %}
+        <nav>
+    {% if user.client %}
+        <!-- Client navigation links -->
+        <a href="{% url 'dashboard' %}">Dashboard</a> |
+        <a href="{% url 'item_list' %}">My Items</a> |
+        <a href="{% url 'rfq_list_client' %}">My RFQs</a> |
+        <form action="{% url 'logout' %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" style="background:none;border:none;padding:0;font:inherit;color:#007bff;text-decoration:underline;cursor:pointer;">Logout</button>
+        </form>
+    {% elif user.vendor %}
+          <!-- Vendor navigation links -->
+          <a href="{% url 'dashboard' %}">Dashboard</a> |
+          <a href="{% url 'rfq_list' %}">Available RFQs</a> |
+          <a href="{% url 'rfq_approved_list' %}">Approved RFQs</a> |
+          <form action="{% url 'logout' %}" method="post" style="display:inline;">
+            {% csrf_token %}
+            <button type="submit" style="background:none;border:none;padding:0;font:inherit;color:#007bff;text-decoration:underline;cursor:pointer;">Logout</button>
+          </form>
+    {% endif %}
+        </nav>
+    {% else %}
+        <!-- Navigation links for unauthenticated users -->
+        <nav>
+            <P> Welcome to our RFQs System</P>
+        </nav>
+    {% endif %}
+
+    <!-- Display messages -->
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li class="{{ message.tags }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- Main content -->
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

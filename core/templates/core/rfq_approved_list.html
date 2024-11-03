@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h2>Approved RFQs</h2>
+    <ul>
+        {% for rfq in rfqs %}
+            <li>
+                {{ rfq }} - <a href="{% url 'rfq_detail' rfq.pk %}">View Details</a>
+            </li>
+        {% empty %}
+            <li>No approved RFQs at the moment.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

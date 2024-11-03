@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h2>Available RFQs</h2>
+    <ul>
+        {% for rfq in rfqs %}
+            <li>
+                {{ rfq }} - <a href="{% url 'quotation_add' rfq.pk %}">Add Quotation</a>
+            </li>
+        {% empty %}
+            <li>No available RFQs at the moment.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

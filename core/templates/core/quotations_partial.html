@@ -1,0 +1,12 @@
+<ul>
+    {% for quotation in quotations %}
+        <li>
+            Vendor: {{ quotation.vendor }}, Cost: {{ quotation.estimated_cost }}
+            {% if quotation.is_approved %}
+                (Approved)
+            {% endif %}
+        </li>
+    {% empty %}
+        <li>No quotations yet.</li>
+    {% endfor %}
+</ul>

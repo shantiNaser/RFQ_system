@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h2>RFQ Details</h2>
+    <p><strong>RFQ ID:</strong> {{ rfq.pk }}</p>
+    <p><strong>Items:</strong></p>
+    <ul>
+        {% for item in rfq.items.all %}
+            <li>{{ item.name }} - {{ item.description }}</li>
+        {% endfor %}
+    </ul>
+    <p><strong>Quotations:</strong></p>
+    <ul>
+        {% for quotation in quotations %}
+            <li>
+                Vendor: {{ quotation.vendor.user.username }} - Estimated Cost: {{ quotation.estimated_cost }}
+                {% if quotation.is_approved %}
+                    (Approved)
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+    {% if not lowest_quotation %}
+        <p>No quotations have been submitted yet.</p>
+    {% else %}
+        <p><strong>Lowest Quotation:</strong> {{ lowest_quotation.estimated_cost }} by {{ lowest_quotation.vendor.user.username }}</p>
+        {% if not lowest_quotation.is_approved %}
+            <form action="{% url 'rfq_approve' rfq.pk %}" method="post">
+                {% csrf_token %}
+                <button type="submit">Approve Lowest Quotation</button>
+            </form>
+        {% else %}
+            <p>The lowest quotation has already been approved.</p>
+        {% endif %}
+    {% endif %}
+{% endblock %}

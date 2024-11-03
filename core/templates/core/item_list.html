@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h2>Your Items</h2>
+    <a href="{% url 'item_add' %}">Add New Item</a>
+    <form method="post" action="{% url 'rfq_create' %}">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <th>Select</th>
+                <th>Item Name</th>
+                <th>Description</th>
+            </tr>
+            {% for item in items %}
+                <tr>
+                    <td><input type="checkbox" name="items" value="{{ item.id }}"></td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.description }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="3">No items found.</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <button type="submit">Create RFQ from Selected Items</button>
+    </form>
+{% endblock %}

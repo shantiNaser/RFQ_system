@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h2>RFQ Details</h2>
+    <p><strong>RFQ ID:</strong> {{ rfq.pk }}</p>
+    <p><strong>Client:</strong> {{ rfq.client.user.username }}</p>
+    <p><strong>Items:</strong></p>
+    <ul>
+        {% for item in rfq.items.all %}
+            <li>{{ item.name }} - {{ item.description }}</li>
+        {% endfor %}
+    </ul>
+    {% if quotation %}
+        <p><strong>Your Quotation:</strong> {{ quotation.estimated_cost }}</p>
+        {% if quotation.is_approved %}
+            <p><strong>Status:</strong> Approved</p>
+        {% else %}
+            <p><strong>Status:</strong> Pending</p>
+        {% endif %}
+    {% else %}
+        <p>You have not submitted a quotation for this RFQ.</p>
+        <a href="{% url 'quotation_add' rfq.pk %}">Submit a Quotation</a>
+    {% endif %}
+{% endblock %}

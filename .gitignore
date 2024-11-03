@@ -1,0 +1,203 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+.env
+.venv
+env.bak/
+venv.bak/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+media
+staticfiles
+static
+
+# Django migrations (if you prefer to exclude them)
+**/migrations/
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Logs
+logs/
+*.log
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# MacOS files
+.DS_Store
+
+# Visual Studio Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Pylint settings
+.pylint.d/
+
+# MyPy cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environments
+.env/
+.env.*
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# Encrypted secrets
+.secrets/
+
+# Docker files
+*.dockerfile
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+wheels/
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Byte-compiled / optimized / DLL files again
+*.pyc
+*.pyo
+*.pyd
+
+# Pytest cache
+.pytest_cache/
+
+# Profiling data
+.prof
+
+# Coverage reports
+.coverage
+coverage/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Site directories
+.site/
+
+# Ignore any secret configuration files
+secret_key.txt
+config/settings/local.py
+config/settings/*.local
+config/.env
+
+# Ansible inventory files
+inventory/
+
+# Node modules (if using Node.js)
+node_modules/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Temporary directories
+tmp/
+temp/
+
+# Ignore backups
+*.bak
+
+# Ignore database dumps
+*.sql
+*.sqlite3
+*.db
+
+# Ignore virtual environment directories
+ENV/
+env/
+venv/
+
+# Ignore virtual environment files
+pip-selfcheck.json
+
+# Ignore compiled files
+*.o
+*.py[cod]
+*$py.class
+
+# Ignore package files
+*.egg
+*.egg-info/
+.eggs/
+
+# Ignore lock files
+yarn.lock
+package-lock.json
+
+# Ignore logs and temp files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore coverage and test reports
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Ignore environment variables files
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Ignore backup files
+*.bak
+
+# Ignore images
+*.png
+*.jpg
+*.jpeg
+*.gif

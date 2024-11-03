@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+  <h2>Register</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p>Select User Type:</p>
+    <label>
+      <input type="radio" name="user_type" value="client" required>
+      Client
+    </label>
+    <label>
+      <input type="radio" name="user_type" value="vendor" required>
+      Vendor
+    </label>
+    <button type="submit">Register</button>
+  </form>
+{% endblock %}
