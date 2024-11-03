@@ -38,6 +38,16 @@
        - password:- naser123456789
        
    #### How you can use the application
+    - Login Page
+
+      <img width="913" alt="Screenshot 2024-11-03 at 8 17 34 PM" src="https://github.com/user-attachments/assets/d8ea6a54-1eb1-407c-8cd3-e00ce54b5127">
+
+ 
+    - Registration Page
+
+      <img width="1087" alt="Screenshot 2024-11-03 at 8 17 40 PM" src="https://github.com/user-attachments/assets/3d0a8cf6-2a8e-49d2-a1e5-3233fd772778">
+
+
     - Client user page 
 
         - Home Page
