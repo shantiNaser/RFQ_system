@@ -38,38 +38,37 @@
        - password:- naser123456789
        
    #### How you can use the application
-    - Login Page
+    - **Login Page**
 
       <img width="913" alt="Screenshot 2024-11-03 at 8 17 34 PM" src="https://github.com/user-attachments/assets/d8ea6a54-1eb1-407c-8cd3-e00ce54b5127">
-
  
-    - Registration Page
+    - **Registration Page**
 
       <img width="1087" alt="Screenshot 2024-11-03 at 8 17 40 PM" src="https://github.com/user-attachments/assets/3d0a8cf6-2a8e-49d2-a1e5-3233fd772778">
 
 
-    - Client user page 
+    - **Client user page**
 
-        - Home Page
+        - **Home Page**
 
           <img width="723" alt="Screenshot 2024-11-03 at 8 01 49 PM" src="https://github.com/user-attachments/assets/51db9698-d273-43cd-9492-b4dc44482c73">
 
-        - RFQs Page
+        - **RFQs Page**
 
           <img width="560" alt="image" src="https://github.com/user-attachments/assets/dcaab2d8-b1a7-4423-8dd8-9695f0fbd8f1">
 
-        - RFQ detail
+        - **RFQ detail**
 
           <img width="823" alt="Screenshot 2024-11-03 at 8 08 24 PM" src="https://github.com/user-attachments/assets/df322bcf-9835-494f-a706-a26d8deeaa61">
 
 
-    - Vendor user page
+    - **Vendor user page**
 
-        - Home Page
+        - **Home Page**
 
           <img width="714" alt="Screenshot 2024-11-03 at 8 11 40 PM" src="https://github.com/user-attachments/assets/fb9eb143-4b16-4361-a005-dcf8ad93e441">
 
-        - Approved RFQ for this user
+        - **Approved RFQ for this user**
 
           <img width="574" alt="Screenshot 2024-11-03 at 8 13 20 PM" src="https://github.com/user-attachments/assets/1b14198c-8fa2-4642-a25e-b57bb720a258">
 
