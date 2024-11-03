@@ -39,17 +39,27 @@
        
    #### How you can use the application
     - Client user page 
+
         - Home Page
+
           <img width="723" alt="Screenshot 2024-11-03 at 8 01 49 PM" src="https://github.com/user-attachments/assets/51db9698-d273-43cd-9492-b4dc44482c73">
+
         - RFQs Page
+
           <img width="560" alt="image" src="https://github.com/user-attachments/assets/dcaab2d8-b1a7-4423-8dd8-9695f0fbd8f1">
+
         - RFQ detail
+
           <img width="560" alt="image" src="https://github.com/user-attachments/assets/2598c02e-e0cf-4f4b-b6c8-cccf5269b14e">
 
     - Vendor user page
+
         - Home Page
+
           <img width="714" alt="Screenshot 2024-11-03 at 8 11 40 PM" src="https://github.com/user-attachments/assets/fb9eb143-4b16-4361-a005-dcf8ad93e441">
+
         - Approved RFQ for this user
+
           <img width="574" alt="Screenshot 2024-11-03 at 8 13 20 PM" src="https://github.com/user-attachments/assets/1b14198c-8fa2-4642-a25e-b57bb720a258">
 
 
