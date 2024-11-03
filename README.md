@@ -50,7 +50,8 @@
 
         - RFQ detail
 
-          <img width="560" alt="image" src="https://github.com/user-attachments/assets/2598c02e-e0cf-4f4b-b6c8-cccf5269b14e">
+          <img width="823" alt="Screenshot 2024-11-03 at 8 08 24 PM" src="https://github.com/user-attachments/assets/df322bcf-9835-494f-a706-a26d8deeaa61">
+
 
     - Vendor user page
 
