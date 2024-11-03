@@ -1,4 +1,4 @@
-<img width="714" alt="Screenshot 2024-11-03 at 8 11 40 PM" src="https://github.com/user-attachments/assets/3aa20ef6-4852-4a02-a242-ea2847b5bd24">## Request For questions (RFQ) System:-
+## Request For questions (RFQ) System:-
 - #### Introduction:-
   The RFQ (Request For Quotation) system we're building is a web application that facilitates the quotation process between clients and vendors. In this system:
     - **Clients** can manage a list of items they need.
