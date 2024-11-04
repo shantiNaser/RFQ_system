@@ -12,11 +12,19 @@
         git clone https://github.com/shantiNaser/RFQ_system.git
         cd RFQ_system
        ```
-   2. Run the Application with Docker Compose
+   2. Build and Start the Docker Containers
         ```
-        docker-compose up
+        docker-compose up --build
        ```
-   3. Access the Application
+   3. Open another terminal window and Generate the Migration Files
+        ```
+        docker-compose exec web python manage.py makemigrations
+       ```
+   4. Apply Migrations to Set Up the Database Schema
+        ```
+        docker-compose exec web python manage.py migrate
+       ```
+   5. Access the Application
         ```
         http://localhost:8000/
        ```
@@ -27,17 +35,9 @@
     - Database: The application uses SQLite as the database, which is included in the repository.
     - Virtual Environment: The virtual environment (venv) is already created and included in the repository, so you don't need to create one.
     
-   ### In Order to use the website you can create a new user or just use the existing one that stored in the sqllite database
-    - Client User
-       - username:- client
-       - password:- client123456
-   - vendor User1
-       - username:- vendor
-       - password:- vendor123456
-   - vendor User2:-
-       - username:- NaserVendor
-       - password:- naser123456789
-       
+   ### In Order to use the website you can create a new users
+   There's two types of users Client, Vendor
+
    ### explain page in the system
     - **Login Page**
 
